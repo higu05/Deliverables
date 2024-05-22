@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Shape and Color Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-entity id="shape" geometry="primitive: box" material="color: yellow" position="0 0.5 0"></a-entity>
+            <a-entity camera></a-entity>
+        </a-marker>
+    </a-scene>
+    <div id="info">
+        <h1>Shape: <span id="shape-name">Box</span></h1>
+        <h1>Color: <span id="color-name">Yellow</span></h1>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
