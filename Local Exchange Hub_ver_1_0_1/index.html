@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Exchange Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Local Exchange Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="profile.html">Profile</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="welcome">
+            <h2>Welcome to the Local Exchange Hub</h2>
+            <p>Find people in your area who share your interests!</p>
+        </section>
+        
+        <section id="matching">
+            <h3>Find Your Match</h3>
+            <form id="matchForm" method="POST" action="match.php">
+                <label for="interest">Select Interest:</label>
+                <select name="interest" id="interest">
+                    <option value="language">Language Exchange</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="sports">Sports</option>
+                    <option value="arts">Arts & Crafts</option>
+                </select>
+                <button type="submit">Find Match</button>
+            </form>
+        </section>
+        
+        <section id="events">
+            <h3>Upcoming Events</h3>
+            <div id="eventList"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Local Exchange Hub</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
