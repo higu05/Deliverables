@@ -1,0 +1,2 @@
+# Install OpenAI library
+!pip install openai
