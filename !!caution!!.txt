@@ -1,0 +1,2 @@
+This Github is primarily intended as a portfolio to help you evaluate my technical skills.
+I take no responsibility for the results of running the source code stored there.
